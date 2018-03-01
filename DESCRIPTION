@@ -1,0 +1,21 @@
+Package: ontology
+Title: Ontological Factors in R
+Version: 0.0.0.9000
+Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
+Description: The ontology package defines a new subclass of an ordered factor
+    called an "ontology". Ontologies are tree-like ordered factors where values lower on
+    the tree inherit values above. The ontology package allows for the creation of 
+    ontology factors, and provides functions for their basic manipulation including
+    querying up and down the ontology, collapsing to a level, and dropping unused levels.
+Depends: R (>= 3.4.3),
+    igraph
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: covr,
+    testthat,
+    magrittr
+Imports: igraph,
+    forcats
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
