@@ -7,15 +7,18 @@ Description: The treecats package defines a new subclass of an ordered factor---
     the tree inherit values above. treecats allows for the creation of 
     tree factors, and provides functions for their basic manipulation including
     querying up and down the tree, collapsing to a level, and dropping unused levels.
-Depends: R (>= 3.4.3),
-    igraph
 License: MIT + file LICENSE
+Depends: 
+    igraph (>= 1.1.2),
+    R (>= 3.1)
+Imports: 
+    forcats (>= 0.3.0),
+    igraph (>= 1.1.2)
+Suggests: 
+    covr (>= 3.0.1),
+    magrittr (>= 1.5),
+    testthat (>= 2.0.0)
 Encoding: UTF-8
 LazyData: true
-Suggests: covr,
-    testthat,
-    magrittr
-Imports: igraph,
-    forcats
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1

@@ -6,3 +6,8 @@
 ^\.travis\.yml$
 ^codecov\.yml$
 ^data-raw$
+^logo$
+^logo\.png$
+^_pkgdown\.yml$
+^docs$
+^\.github$
