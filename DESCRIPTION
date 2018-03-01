@@ -9,14 +9,13 @@ Description: The treecats package defines a new subclass of an ordered factor---
     querying up and down the tree, collapsing to a level, and dropping unused levels.
 License: MIT + file LICENSE
 Depends: 
-    igraph (>= 1.1.2),
     R (>= 3.1)
 Imports: 
+    igraph (>= 1.1.2),
     forcats (>= 0.3.0),
-    igraph (>= 1.1.2)
+    magrittr
 Suggests: 
     covr (>= 3.0.1),
-    magrittr (>= 1.5),
     testthat (>= 2.0.0)
 Encoding: UTF-8
 LazyData: true

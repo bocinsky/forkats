@@ -1,4 +1,4 @@
 library(testthat)
-library(ontology)
+library(treecats)
 
-test_check("ontology")
+test_check("treecats")
