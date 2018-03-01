@@ -33,6 +33,7 @@ You can install treecats from github with:
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("bocinsky/treecats")
+
 ```
 
 ## Example
