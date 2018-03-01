@@ -16,6 +16,10 @@ creation of tree factors, and provides functions for their basic
 manipulation including querying up and down the tree, collapsing to a
 level, and dropping unused levels.
 
+“treecats” stands for “tree categories.” Yes, the package and its name
+is inspired by Hadley Wickham’s
+[`forcats`](http://forcats.tidyverse.org/).
+
 ## Installation
 
 You can install treecats from github with:
