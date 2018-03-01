@@ -12,21 +12,21 @@ knitr::opts_chunk$set(
 )
 ```
 
-# ontology
+# treecats
 
-[![Travis-CI Build Status](https://travis-ci.org/bocinsky/ontology.svg?branch=master)](https://travis-ci.org/bocinsky/ontology)
-[![Coverage Status](https://img.shields.io/codecov/c/github/bocinsky/ontology/master.svg)](https://codecov.io/github/bocinsky/ontology?branch=master)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/ontology)](https://cran.r-project.org/package=ontology)
+[![Travis-CI Build Status](https://travis-ci.org/bocinsky/treecats.svg?branch=master)](https://travis-ci.org/bocinsky/treecats)
+[![Coverage Status](https://img.shields.io/codecov/c/github/bocinsky/treecats/master.svg)](https://codecov.io/github/bocinsky/treecats?branch=master)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/treecats)](https://cran.r-project.org/package=treecats)
 
-The goal of ontology is to ...
+The goal of treecats is to ...
 
 ## Installation
 
-You can install ontology from github with:
+You can install treecats from github with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
-devtools::install_github("bocinsky/ontology")
+devtools::install_github("bocinsky/treecats")
 ```
 
 ## Example
