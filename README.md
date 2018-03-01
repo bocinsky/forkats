@@ -29,19 +29,20 @@ You can install treecats from github with:
 devtools::install_github("bocinsky/treecats")
 ```
 
-<!-- ## Example -->
+## Example
 
-<!-- This is a basic example which shows you how to solve a common problem: -->
-
-<!-- ```{r example} -->
-
-<!-- library(magritty) -->
-
-<!-- x <- c("John","Kyle","Molly") %>% -->
-
-<!--   ontology() %>% -->
-
-<!-- ``` -->
+``` r
+library(treecats)
+c("John","Kyle","Molly") %>%
+  tct_tree()
+#> [1] John  Kyle  Molly
+#> attr(,"tct_levels")
+#> IGRAPH 212b4b1 DN-- 3 2 -- 
+#> + attr: name (v/c)
+#> + edges from 212b4b1 (vertex names):
+#> [1] John->Kyle  Kyle->Molly
+#> Levels: John < Kyle < Molly
+```
 
 ## Contributor Code of Conduct
 

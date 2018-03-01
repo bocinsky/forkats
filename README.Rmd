@@ -35,16 +35,16 @@ You can install treecats from github with:
 devtools::install_github("bocinsky/treecats")
 ```
 
-<!-- ## Example -->
+## Example
 
-<!-- This is a basic example which shows you how to solve a common problem: -->
 
-<!-- ```{r example} -->
-<!-- library(magritty) -->
-<!-- x <- c("John","Kyle","Molly") %>% -->
-<!--   ontology() %>% -->
 
-<!-- ``` -->
+```{r example}
+library(treecats)
+c("John","Kyle","Molly") %>%
+  tct_tree()
+  
+```
 
 
 ## Contributor Code of Conduct
