@@ -2,9 +2,9 @@ Package: treecats
 Title: Tree-like Factors in R
 Version: 0.0.0.9000
 Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
-Description: The forkats package defines a new subclass of an ordered factor---"trees"---
+Description: The treecats package defines a new subclass of an ordered factor---"trees"---
     that are simple tree-like ontologies where values lower on
-    the tree inherit values above. The treecats package allows for the creation of 
+    the tree inherit values above. treecats allows for the creation of 
     tree factors, and provides functions for their basic manipulation including
     querying up and down the tree, collapsing to a level, and dropping unused levels.
 Depends: R (>= 3.4.3),

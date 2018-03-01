@@ -18,7 +18,11 @@ knitr::opts_chunk$set(
 [![Coverage Status](https://img.shields.io/codecov/c/github/bocinsky/treecats/master.svg)](https://codecov.io/github/bocinsky/treecats?branch=master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/treecats)](https://cran.r-project.org/package=treecats)
 
-The goal of treecats is to ...
+The `treecats` package defines a new subclass of an ordered factor---"trees"---
+that are simple tree-like ontologies where values lower on
+the tree inherit values above. `treecats` allows for the creation of 
+tree factors, and provides functions for their basic manipulation including
+querying up and down the tree, collapsing to a level, and dropping unused levels.
 
 ## Installation
 
@@ -29,16 +33,16 @@ You can install treecats from github with:
 devtools::install_github("bocinsky/treecats")
 ```
 
-## Example
+<!-- ## Example -->
 
-This is a basic example which shows you how to solve a common problem:
+<!-- This is a basic example which shows you how to solve a common problem: -->
 
-```{r example}
-library(magritty)
-x <- c("John","Kyle","Molly") %>%
-  ontology() %>%
-  
-```
+<!-- ```{r example} -->
+<!-- library(magritty) -->
+<!-- x <- c("John","Kyle","Molly") %>% -->
+<!--   ontology() %>% -->
+
+<!-- ``` -->
 
 
 ## Contributor Code of Conduct
