@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# treecats
+# treecats <img src="logo.png" align="right" height="225"/>
 
 [![Travis-CI Build
 Status](https://travis-ci.org/bocinsky/treecats.svg?branch=master)](https://travis-ci.org/bocinsky/treecats)
@@ -37,9 +37,9 @@ c("John","Kyle","Molly") %>%
   tct_tree()
 #> [1] John  Kyle  Molly
 #> attr(,"tct_levels")
-#> IGRAPH 7dec377 DN-- 3 2 -- 
+#> IGRAPH 172130e DN-- 3 2 -- 
 #> + attr: name (v/c)
-#> + edges from 7dec377 (vertex names):
+#> + edges from 172130e (vertex names):
 #> [1] John->Kyle  Kyle->Molly
 #> Levels: John < Kyle < Molly
 ```

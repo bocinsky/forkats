@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# treecats
+# treecats <img src="logo.png" align="right" height="225"/>
 
 [![Travis-CI Build Status](https://travis-ci.org/bocinsky/treecats.svg?branch=master)](https://travis-ci.org/bocinsky/treecats)
 [![Coverage Status](https://img.shields.io/codecov/c/github/bocinsky/treecats/master.svg)](https://codecov.io/github/bocinsky/treecats?branch=master)
