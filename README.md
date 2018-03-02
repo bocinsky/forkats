@@ -17,7 +17,7 @@ manipulation including querying up and down the tree, collapsing to a
 level, and dropping unused levels.
 
 “treecats” stands for “tree categories.” Yes, the package and its name
-is inspired by Hadley Wickham’s
+are inspired by Hadley Wickham’s
 [`forcats`](http://forcats.tidyverse.org/). The logo comes from John
 Tenniel’s classic illustrations to *Alice’s Adventures in Wonderland*.
 
@@ -44,9 +44,9 @@ c("John","Kyle","Molly") %>%
   tct_tree()
 #> [1] John  Kyle  Molly
 #> attr(,"tct_levels")
-#> IGRAPH 3529c2f DN-- 3 2 -- 
+#> IGRAPH 5874aa4 DN-- 3 2 -- 
 #> + attr: name (v/c)
-#> + edges from 3529c2f (vertex names):
+#> + edges from 5874aa4 (vertex names):
 #> [1] John->Kyle  Kyle->Molly
 #> Levels: John < Kyle < Molly
 ```

@@ -24,7 +24,7 @@ the tree inherit values above. `treecats` allows for the creation of
 tree factors, and provides functions for their basic manipulation including
 querying up and down the tree, collapsing to a level, and dropping unused levels.
 
-"treecats" stands for "tree categories." Yes, the package and its name is inspired by Hadley Wickham's [`forcats`](http://forcats.tidyverse.org/). The logo comes from John Tenniel's classic illustrations to *Alice's Adventures in Wonderland*.
+"treecats" stands for "tree categories." Yes, the package and its name are inspired by Hadley Wickham's [`forcats`](http://forcats.tidyverse.org/). The logo comes from John Tenniel's classic illustrations to *Alice's Adventures in Wonderland*.
 
 > “Alice asked the Cheshire Cat, who was sitting in a tree, “What road do I take?”<br>
 The cat asked, “Where do you want to go?”<br>
@@ -43,8 +43,6 @@ devtools::install_github("bocinsky/treecats")
 ```
 
 ## Example
-
-
 
 ```{r example}
 library(treecats)
