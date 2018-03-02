@@ -18,7 +18,14 @@ level, and dropping unused levels.
 
 “treecats” stands for “tree categories.” Yes, the package and its name
 is inspired by Hadley Wickham’s
-[`forcats`](http://forcats.tidyverse.org/).
+[`forcats`](http://forcats.tidyverse.org/). The logo comes from John
+Tenniel’s classic illustrations to *Alice’s Adventures in Wonderland*.
+
+> “Alice asked the Cheshire Cat, who was sitting in a tree, “What road
+> do I take?”<br> The cat asked, “Where do you want to go?”<br> “I don’t
+> know,” Alice answered.<br> “Then,” said the cat, “it really doesn’t
+> matter, does it?” <br> — Lewis Carroll, *Alice’s Adventures in
+> Wonderland*
 
 ## Installation
 
@@ -37,9 +44,9 @@ c("John","Kyle","Molly") %>%
   tct_tree()
 #> [1] John  Kyle  Molly
 #> attr(,"tct_levels")
-#> IGRAPH 5a2cd84 DN-- 3 2 -- 
+#> IGRAPH 3529c2f DN-- 3 2 -- 
 #> + attr: name (v/c)
-#> + edges from 5a2cd84 (vertex names):
+#> + edges from 3529c2f (vertex names):
 #> [1] John->Kyle  Kyle->Molly
 #> Levels: John < Kyle < Molly
 ```
