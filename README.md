@@ -44,9 +44,9 @@ c("John","Kyle","Molly") %>%
   tct_tree()
 #> [1] John  Kyle  Molly
 #> attr(,"tct_levels")
-#> IGRAPH 5874aa4 DN-- 3 2 -- 
+#> IGRAPH 4c2722d DN-- 3 2 -- 
 #> + attr: name (v/c)
-#> + edges from 5874aa4 (vertex names):
+#> + edges from 4c2722d (vertex names):
 #> [1] John->Kyle  Kyle->Molly
 #> Levels: John < Kyle < Molly
 ```

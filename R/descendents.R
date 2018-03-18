@@ -25,8 +25,11 @@ tct_get_descendents <- function(x,
       mode = "out"
     )$leftout
   )
-
-  out <- igraph::V(tct_levels(x))$name[-out]
+  
+  if(length(out) > 0)
+    out <- igraph::V(tct_levels(x))$name[-out]
+  else
+    out <- igraph::V(tct_levels(x))$name
   
   if(return_self) 
     return(out)
@@ -37,8 +40,8 @@ tct_get_descendents <- function(x,
 
 #' @describeIn tct_get_descendents Returns a logical vector of descendent values.
 tct_is_descendent <- function(x, 
-                          level,
-                          return_self = TRUE) {
+                              level,
+                              return_self = TRUE) {
   x[x %in% tct_get_descendents(x, level, return_self)]
   
 }
