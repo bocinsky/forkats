@@ -17,6 +17,7 @@
 #' @param ... other parameters passed on to [factor].
 #'
 #' @importFrom stats na.omit
+#' @importFrom magrittr "%<>%"
 #'
 #' @export
 #'
@@ -26,30 +27,56 @@
 tct_tree <- function(x = factor(ordered = TRUE),
                      tct_levels,
                      ...) {
+  
   if (is.null(x)) {
     x <- factor(ordered = TRUE)
   }
-
+  
   if (!is.ordered(x)) {
     x <- factor(x, ordered = TRUE, ...)
   }
-
+  
   if (missing(tct_levels)) {
-    edgelist <- cbind(levels(x), c(levels(x)[2:length(levels(x))], NA))
-    tct_levels <- igraph::graph_from_data_frame(
-      d = na.omit(edgelist),
-      vertices = levels(x),
-      directed = TRUE
-    )
+    if(length(levels(x)) > 0){
+      edgelist <- cbind(levels(x), c(levels(x)[2:length(levels(x))], NA))
+      tct_levels <- igraph::graph_from_data_frame(
+        d = na.omit(edgelist),
+        vertices = levels(x),
+        directed = TRUE
+      )
+    } else{
+      tct_levels <- igraph::make_empty_graph()
+    }
   }
-
+  
   tct_levels(x) <- tct_levels
-
+  
+  x %<>%
+    forcats::fct_expand(igraph::V(tct_levels(x)) %>% 
+                          names())
+  
+  reord <- function(x){
+    new.ord <- match(igraph::V(tct_levels(x)) %>% 
+                       names(),
+                     levels(x)
+    )
+    
+    new.ord <- c(new.ord,setdiff(1:length(levels(x)),new.ord))
+    
+    new.ord
+  }
+  
+  x %<>%
+    forcats::lvls_reorder(
+      reord(x)
+    )
+  
   class(x) <- c(
     "tct_tree",
     "ordered",
     "factor"
   )
+  
   x
 }
 

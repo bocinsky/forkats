@@ -23,6 +23,7 @@ tct_collapse <- function(x,
   if (!update_levels) {
     return(x)
   } else {
-    return(tct_drop(x))
+    return(tct_drop(x, 
+                    only = desc))
   }
 }
