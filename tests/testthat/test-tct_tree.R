@@ -1,8 +1,8 @@
 context("test-tct_tree")
 
-test_that("Create empty tree", {
-  tct_tree()
-})
+# test_that("Create empty tree", {
+#   tct_tree()
+# })
 
 test_that("Create tree from vector", {
      tct_tree(x = c("Kyle", "John", "Molly"))
