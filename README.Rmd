@@ -14,9 +14,10 @@ knitr::opts_chunk$set(
 
 # treecats <img src="logo.png" align="right" height="225"/>
 
+[![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/treecats)](https://cran.r-project.org/package=treecats)
 [![Travis-CI Build Status](https://travis-ci.org/bocinsky/treecats.svg?branch=master)](https://travis-ci.org/bocinsky/treecats)
 [![Coverage Status](https://img.shields.io/codecov/c/github/bocinsky/treecats/master.svg)](https://codecov.io/github/bocinsky/treecats?branch=master)
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/treecats)](https://cran.r-project.org/package=treecats)
 
 The `treecats` package defines a new subclass of an ordered factor---"trees"---
 that are simple tree-like ontologies where values lower on

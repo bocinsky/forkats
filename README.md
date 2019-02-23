@@ -3,6 +3,7 @@
 
 # treecats <img src="logo.png" align="right" height="225"/>
 
+[![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Travis-CI Build
 Status](https://travis-ci.org/bocinsky/treecats.svg?branch=master)](https://travis-ci.org/bocinsky/treecats)
 [![Coverage
@@ -44,9 +45,9 @@ c("John","Kyle","Molly") %>%
   tct_tree()
 #> [1] John  Kyle  Molly
 #> attr(,"tct_levels")
-#> IGRAPH 4c2722d DN-- 3 2 -- 
+#> IGRAPH befc7cf DN-- 3 2 -- 
 #> + attr: name (v/c)
-#> + edges from 4c2722d (vertex names):
+#> + edges from befc7cf (vertex names):
 #> [1] John->Kyle  Kyle->Molly
 #> Levels: John < Kyle < Molly
 ```
