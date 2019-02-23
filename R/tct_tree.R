@@ -121,9 +121,7 @@ tct_levels <- function(x)
   x
 }
 
-#' @describeIn tct_tree The basic extraction function for a `tct_tree`.
 #' @export
-# define [ method
 `[.tct_tree` <- function(x, i, j, ..., drop = TRUE) {
   cls <- class(x)
   atrb <- attributes(x)
