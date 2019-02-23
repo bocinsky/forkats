@@ -121,7 +121,7 @@ tct_levels <- function(x)
   x
 }
 
-#' @export
+#' @exportMethod `[.tct_tree`
 `[.tct_tree` <- function(x, i, j, ..., drop = TRUE) {
   cls <- class(x)
   atrb <- attributes(x)
