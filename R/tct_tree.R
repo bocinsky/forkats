@@ -118,7 +118,6 @@ tct_levels <- function(x)
   x
 }
 
-#' @describeIn tct_tree Extraction function for the `tct_tree` class.
 #' @export
 `[.tct_tree` <- function(x, i, j, ..., drop = TRUE) {
   cls <- class(x)

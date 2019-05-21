@@ -1,6 +1,6 @@
 Package: treecats
 Title: Tree-like Factors in R
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: person("Kyle", "Bocinsky", email = "bocinsky@gmail.com", role = c("aut", "cre"))
 Description: The treecats package defines a new subclass of an ordered factor---"trees"---
     that are simple tree-like ontologies where values lower on
@@ -20,6 +20,6 @@ Suggests:
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
 URL: https://github.com/bocinsky/treecats
 BugReports: https://github.com/bocinsky/treecats/issues
+RoxygenNote: 6.1.1
