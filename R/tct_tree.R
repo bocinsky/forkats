@@ -71,11 +71,8 @@ tct_tree <- function(x = factor(ordered = TRUE),
       reord(x)
     )
   
-  class(x) <- c(
-    "tct_tree",
-    "ordered",
-    "factor"
-  )
+  x %<>%
+    tct_set_class()
   
   x
 }
@@ -121,6 +118,7 @@ tct_levels <- function(x)
   x
 }
 
+#' @describeIn tct_tree Extraction function for the `tct_tree` class.
 #' @export
 `[.tct_tree` <- function(x, i, j, ..., drop = TRUE) {
   cls <- class(x)
@@ -130,3 +128,14 @@ tct_levels <- function(x)
   attributes(x) <- atrb
   x
 }
+
+tct_set_class <- function(x){
+  class(x) <- c(
+    "tct_tree",
+    "ordered",
+    "factor"
+  )
+  
+  x
+}
+

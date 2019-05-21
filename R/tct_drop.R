@@ -20,5 +20,8 @@ tct_drop <- function(x,
   missing_levels <- igraph::V(tct_levels(x))$names[!(igraph::V(tct_levels(x))$name %in% levels(x))]
   tct_levels(x) <- igraph::delete_vertices(tct_levels(x), missing_levels)
 
+  x %<>%
+    tct_set_class()
+  
   x
 }
